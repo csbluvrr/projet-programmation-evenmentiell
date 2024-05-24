@@ -356,6 +356,7 @@ background-size: 100% 100%;
 }
 
 .about_img--card {
+  background-image: url("bgg.gif");
   margin: 10px;
   height: 500px;
   width: 500px;
@@ -364,7 +365,6 @@ background-size: 100% 100%;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 #card-2 {
