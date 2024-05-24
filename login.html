@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moo's login page</title>
+    <link href="https://db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form onsubmit="add(); return false;">
+                <h1>Create Account</h1>
+                <span class="correct"> Fill in everything for registration</span>
+                <input type="text" placeholder="Username" id="usrnamesign" required />
+                <p id="usrnamesign-error" class="error-message"></p>
+                <input type="email" placeholder="Email" id="emsign" required />
+                <p id="emsign-error" class="error-message"></p>
+                <input type="password" id="signinpw1" placeholder="Password" required />
+                <p id="signinpw1-error" class="error-message"></p>
+                <input type="password" id="signinpw2" placeholder="Verify password" required />
+                <p id="signinpw2-error" class="error-message"></p>
+                <input class="hp" type="button" value="Show Password" onclick="showpws()">
+                <p id="s1" class="correct" ></p>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form onsubmit="login(); return false;">
+                <h1>Sign in</h1>
+                <input type="text" placeholder="Username" id="usrnamelog" required />
+                <p id="usrnamelog-error" class="error-message"></p>
+                <input type="password" id="loginpw" placeholder="Password" required />
+                <p id="loginpw-error" class="error-message"></p>
+                <input class="hp" type="button" value="Show Password" onclick="showpwl()">
+                <button type="submit">Sign in</button>
+                <p class="error-message" id="s2"></p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Hello newcomer! <br>Welcome to Moo's ;3</h1>
+                    <p>fill in your personal info to start your adventure with us</p>
+                    <button class="ghost" id="signIn">Already have an account? Log In</button>
+                    <br>
+                    <br>
+                    <img src="loginn.gif" alt="kirby1 pookie" width="40%">
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome back!!<br>to Moo :D</h1>
+                    <p>Login to your account and continue browsing</p>
+                    <button class="ghost" id="signUp"> New here? Sign Up</button>
+                    <br>
+                    <img src="login.gif" alt="kirby2 pookie" width="30%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
