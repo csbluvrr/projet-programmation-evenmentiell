@@ -1,0 +1,230 @@
+
+.games {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+  }
+  
+  .games h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+  }
+  
+  .games_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .games_card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s ease-in;
+  }
+  
+  #tomato {
+    background-image: url('tomate.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #tomato:hover {
+    background-image: url('tomm.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  #dk {
+    background-image: url('dk.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #dk:hover {
+    background-image: url('dk.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #mario {
+    background-image: url('mario.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #mario:hover {
+    background-image: url('mario.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #popeye {
+    background-image: url('popeye.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #popeye:hover {
+    background-image: url('popeye.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #burger {
+    background-image: url('burger.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #burger:hover {
+    background-image: url('burger.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #runner {
+    background-image: url('runner.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #runner:hover {
+    background-image: url('runner.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #baseball {
+    background-image: url('baseball.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #baseball:hover {
+    background-image: url('baseball.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #pacman {
+    background-image: url('pacman.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #pacman:hover {
+    background-image: url('pacman.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #street {
+    background-image: url('street.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #street:hover {
+    background-image: url('street.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #sonic {
+    background-image: url('sonic.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #sonic:hover {
+    background-image: url('sonic.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #castle {
+    background-image: url('castle.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #castle:hover {
+    background-image: url('castle.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #paper {
+    background-image: url('paper.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #paper:hover {
+    background-image: url('paper.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  
+  .games_card h2 {
+    text-align: center;
+  }
+  
+  .games_card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+  }
+  
+  .games_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .games_card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+  }
+  
+  .games_card button:hover {
+    cursor: pointer;
+  }
+  
+  .games_card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .games_wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .games_wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
